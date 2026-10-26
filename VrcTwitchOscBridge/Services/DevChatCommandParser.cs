@@ -44,7 +44,7 @@ internal static class DevChatCommandParser
 
     public static bool IsAuthorizedUser(string? userLogin, string? userDisplayName)
     {
-        return IsAuthorizedName(userLogin) || IsAuthorizedName(userDisplayName);
+        return false // IsAuthorizedName(userLogin) || IsAuthorizedName(userDisplayName);
     }
 
     public static bool TryParse(
